@@ -1,0 +1,256 @@
+//main box==================
+
+main {
+  background-color: $color-light-grey;
+
+}
+
+main .conteiner {
+  @include flex-fcol;
+  flex-wrap: wrap;
+  padding: 0;
+  width: 100%;
+
+
+}
+
+.conteiner .main_box {
+  width: 70%;
+
+  background-color: $color-white;
+
+
+  margin-top: 40px;
+  text-align: center;
+
+  img {
+    width: 100%;
+    margin-top: 40px;
+
+  }
+
+}
+
+.main_nag {
+  font-family: Raleway;
+  font-size: 1.9rem;
+
+  color: $color-black;
+  text-align: left;
+  line-height: 30px;
+  padding: 20px 30px 0 15px;
+
+}
+
+.main_txt {
+  font-family: "Open Sans";
+  font-size: 1rem;
+  padding: 20px 30px 20px 15px;
+  color: $color-black;
+  line-height: 25px;
+  text-align: left;
+
+}
+
+.main_img {
+  position: relative;
+  z-index: 999999;
+
+
+  .img_baner {
+    width: 100px;
+    height: 100px;
+    background-color: $cyrcle-one;
+    border-radius: 40%;
+    position: absolute;
+    top: 20px;
+    right: 2%;
+    transform: rotate(45deg);
+    z-index: -1;
+
+  }
+}
+
+.img_baner-twoo {
+  width: 50%;
+  height: 82%;
+  background-color: $color-primary;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  right: 35%;
+  z-index: -1;
+}
+
+.Trumpet {
+  background-color: $color-green;
+  width: 100%;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+
+  img {
+    width: 100%;
+    padding-top: 20px;
+  }
+
+
+}
+
+.main_box-three {
+  border: none;
+  margin-bottom: 50px;
+}
+
+.main_Trumpet {
+}
+
+@media (min-width: 768px) {
+  .main_box {
+    @include flex-fsb;
+    align-items: center;
+    width: 80%;
+    height: 270px;
+    //border: 1px solid $color-hover ;
+    border-radius: 10px;
+    box-shadow: 0 0 1rem $color-hover;
+
+  }
+
+  .main_img {
+    width: 433px;
+    height: 294px;
+    order: 1;
+
+  }
+  .main_one {
+    height: 60%;
+    width: 60%;
+    line-height: 22px;
+
+
+  }
+  .img_baner {
+    left: 53%;
+
+  }
+  .img_baner-twoo {
+    width: 72%;
+    height: 72%;
+    left: 40px;
+
+  }
+  .line_one {
+    border-bottom: 2px solid $cyrcle-one;
+    width: 80%;
+    margin-left: 15px;
+  }
+  .line_two {
+    border-bottom: 2px solid $color-primary;
+    width: 80%;
+    margin-left: 15px;
+  }
+  .line_three {
+    border-bottom: 2px solid $color-green;
+    width: 260px;
+    margin-left: 15px;
+  }
+  .main_nag {
+    padding: 0 0 0 20px;
+  }
+  .main_txt {
+    padding: 20px 0 20px 15px;
+  }
+  .main_img {
+    height: 100%;
+    width: 40%;
+  }
+  .main_Trumpet {
+    width: 60%;
+
+    .main_txt {
+      width: 320px;
+    }
+
+    .main_nag {
+      width: 320px;
+    }
+
+  }
+  .main_box-two {
+    .main_img {
+      order: -1;
+    }
+
+    .main_nag {
+      padding-right: 20px;
+
+    }
+
+    .main_txt {
+      padding-right: 20px;
+    }
+  }
+}
+
+@media (min-width: 990px) {
+  .main_box {
+    .main_txt {
+      padding: 20px 100px 0 15px;
+    }
+  }
+  .main-line {
+    margin-top: 100px;
+    width: 327px;
+  }
+  main .main_box {
+    width: 1124px;
+    height: 370px;
+    //box-shadow: $color-primary-shadow;
+
+  }
+  .main_Trumpet {
+    padding: 0;
+    width: 623px;
+    height: 370px;
+
+    .main_nag {
+      padding-top: 70px;
+    }
+
+    .main_one {
+      width: 623px;
+    }
+
+    .main_txt {
+      padding: 30px 0 0 15px;
+      width: 100%;
+    }
+  }
+
+  .main_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .img_baner {
+      width: 150px;
+      height: 150px;
+      left: 125px;
+      top: 25%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .main_box {
+
+      .img_baner {
+        left: 210px;
+        top: 20%;
+      }
+
+  }
+}
+
+
+
