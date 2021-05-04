@@ -1,0 +1,82 @@
+section .conteiner {
+  @include flex-fcol;
+  text-align: center;
+  padding: 0;
+  margin: 13px auto;
+  padding-bottom: 50px;
+}
+
+
+.section_nag-txt {
+  font-family: Raleway;
+  font-size: 1.9rem;
+  line-height: 2.2rem;
+
+}
+
+.section_img {
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  background-color: $cyrcle-one;
+  margin: 0 auto;
+  margin-top: 25px;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 0;
+    right: -15%;
+  }
+}
+
+.boxS_two {
+  background-color: $color-primary;
+
+  img {
+    position: absolute;
+    top: 50%;
+    right: -35%;
+    transform: translateY(-50%);
+  }
+}
+
+.boxS_three {
+  background-color: $color-green;
+
+  img {
+    position: absolute;
+    top: 5px;
+    right: -30%;
+  }
+}
+
+.section_nag {
+  font-family: Raleway;
+  font-size: 1.25rem;
+  padding-top: 14px;
+  font-weight: 800;
+  color: $color-black;
+
+}
+
+.section_text {
+  font-family: Raleway;
+  font-size: 1rem;
+  padding-top: 20px;
+
+  color: $color-hover;
+
+}
+
+@media (min-width: 768px) {
+  .baner_btn {
+    width: 30%;
+    margin: 0 auto;
+  }
+  .section_box-basic {
+    @include flex-fsa;
+
+
+  }
+}
